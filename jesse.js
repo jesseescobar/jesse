@@ -17,17 +17,15 @@ function setup() {
 
 
 function draw() {
-  if (x<250) {      //ellipse will increase until it reaches 810
-    //fill(0);
+  if (x<250) { // ellipse will increase until it reaches 810
     noFill();
-    stroke(col, 3*col, 100);
+    stroke(col, 3 * col, 100);
     ellipse(mouseX, mouseY, x, x);
     x += 1;
     col += 3.5;
   }
-  else {   //ellipse will loop back to 0 then go back
-    //saveFrame();
-    x=0;
+  else {  // ellipse will loop back to 0 then go back
+    x = 0;
     col = 0;
     background(0);
   }
@@ -38,10 +36,4 @@ function draw() {
 
   var amp = map(mouseY, 0, height, 0.25, .01);
   osc.amp(amp);
-
-}
-
-function mousePressed() {                   // once mouse is pressed, it will clear to background
-  background(0);
-  x=0;
 }
