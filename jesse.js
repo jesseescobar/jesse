@@ -5,7 +5,7 @@ var osc, fft;
 
 function setup() {
   colorMode(HSB, 800, 100, 100);
-  createCanvas(600, 600);
+  createCanvas(700, 700);
   background(0);
 
   osc = new p5.TriOsc(); // set frequency and type
