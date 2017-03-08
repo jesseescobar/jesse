@@ -5,14 +5,14 @@ var osc, fft;
 
 function setup() {
   colorMode(HSB, 800, 100, 100);
-  createCanvas(700, 700);
+  createCanvas(600, 600);
   background(0);
 
   osc = new p5.TriOsc(); // set frequency and type
   osc.amp(1);
 
-  /*fft = new p5.FFT();
-  osc.start();*/
+  fft = new p5.FFT();
+  osc.start();
 }
 
 
